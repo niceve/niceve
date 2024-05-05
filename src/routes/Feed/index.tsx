@@ -22,8 +22,6 @@ const Feed: React.FC<Props> = () => {
     <StyledWrapper>
 
       <div className="mid">
-        <MobileProfileCard />
-        <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <div className="tags">
           <TagList />
         </div>
@@ -70,7 +68,7 @@ const StyledWrapper = styled.div`
   }
 
   > .mid {
-    grid-column: span 12 / span 12;
+    grid-column: 3 / span 8;
 
     > .tags {
       display: block;
