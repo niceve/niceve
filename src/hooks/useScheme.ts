@@ -16,8 +16,8 @@ const useScheme = (): [Scheme, SetScheme] => {
   })
 
 
-  console.log(data);
-  
+  console.log(data)
+
   const scheme = data === ("light" || null) ? "light" : "dark"
 
   const setScheme = (scheme: "light" | "dark") => {
