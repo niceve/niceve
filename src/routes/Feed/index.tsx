@@ -26,7 +26,7 @@ const Feed: React.FC<Props> = () => {
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
-        <TagList />
+
       </div>
       <div className="mid">
         <MobileProfileCard />
