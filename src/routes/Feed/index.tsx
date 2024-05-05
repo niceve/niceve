@@ -72,10 +72,6 @@ const StyledWrapper = styled.div`
   > .mid {
     grid-column: span 12 / span 12;
 
-    @media (min-width: 1024px) {
-      grid-column: span 7 / span 7;
-    }
-
     > .tags {
       display: block;
 
