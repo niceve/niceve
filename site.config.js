@@ -1,9 +1,9 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "Nina",
+    name: "morethanmin",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "role",
+    role: "frontend developer",
     bio: "I develop everything using node.",
     email: "morethanmin.dev@gmail.com",
     linkedin: "morethanmin",
@@ -30,7 +30,7 @@ const CONFIG = {
 
   // notion configuration (required)
   notionConfig: {
-    pageId: "451b883078ca47d7b2663e7629a63e9c",
+    pageId: process.env.NOTION_PAGE_ID,
   },
 
   // plugin configuration (optional)
@@ -53,7 +53,7 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: false,
+    enable: true,
     config: {
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
