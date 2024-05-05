@@ -8,10 +8,8 @@ type SetScheme = (scheme: Scheme) => void
 
 const useScheme = (): [Scheme, SetScheme] => {
   const queryClient = useQueryClient()
-  
-  const { data } = "light"
 
-  const scheme = data === "light" ? "light" : "dark"
+  const scheme = "light"
 
   const setScheme = (scheme: "light" | "dark") => {
     setCookie("scheme", scheme)
