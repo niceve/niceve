@@ -8,12 +8,8 @@ type SetScheme = (scheme: Scheme) => void
 
 const useScheme = (): [Scheme, SetScheme] => {
   const queryClient = useQueryClient()
-
-  const { data } = useQuery({
-    queryKey: queryKey.scheme(),
-    enabled: false,
-    initialData: "light",
-  })
+  
+  const { data } = "light"
 
   const scheme = data === "light" ? "light" : "dark"
 
