@@ -20,7 +20,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
             {data.author && data.author[0] && data.author[0].name && (
               <>
                 <div className="author">
-                  <div className="">{data.author[0].name.split(' ')[0];}</div>
+                  <div className="">{data.author[0].name.split(' ')[0]}</div>
                 </div>
                 <div className="hr"></div>
               </>
